@@ -76,11 +76,15 @@ function HallDetails() {
           <h3 className="text-lg font-semibold mb-2">Pricing</h3>
           <p className="text-gray-700">₹1200 per plate · Minimum 200 guests</p>
         </div>
-
+        
+        <Link to="/booking">
         {/* Booking Button */}
         <button className="w-full sm:w-auto bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition">
           Book Now
         </button>
+        </Link>
+
+        
       </div>
     </div>
   );

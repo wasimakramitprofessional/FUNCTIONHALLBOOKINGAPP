@@ -5,6 +5,7 @@ import SearchResults from "./pages/SearchResults";
 import HallDetail from "./pages/HallDetail";
 import BookingCheckout from "./pages/BookingCheckout";
 import CustomerDashboard from "./pages/CustomerDashboard";
+import BookingForm from "./pages/BookingForm";
 
 function AppRoutes(){
     return(
@@ -14,6 +15,7 @@ function AppRoutes(){
             <Route path="/hall/:id" element={<HallDetail />} />
             <Route path="/booking/:id" element={<BookingCheckout />} />
             <Route path="/dashboard" element={<CustomerDashboard />} />
+            <Route path="/booking" element={<BookingForm />} />
         </Routes>
     );
 }
