@@ -1,44 +1,7 @@
-// import React from "react";
-// import ReviewList from "../components/ReviewList";
-
-// function HallDetail(){
-//     return(
-//         <div className="hall-detail">
-//             <div className="photos">[Photo Gallery Placeholder]</div>
-//             <div className="details">
-//                 <h2>Grand Orchid Banquets</h2>
-//                 <p>*4.5 (120 reviews) . Madhapur, Hyderabad</p>
-//                 <p>Capacity: 200-500 . Amenities: AC, Parking, Catering, Decor</p>
-//                 <section>
-//                     <h3>About</h3>
-//                     <p>Description of hall ambience, facilities, etc.</p>
-//                 </section>
-//                 <section>
-//                     <h3>Amenities</h3>
-//                     <span>Parking</span><span>Catering</span><span>Decor</span><span>Generator</span>
-//                 </section>
-//                 <ReviewList />
-//             </div>
-//             <aside className="booking-panel">
-//                 <h3>Check Availability & book</h3>
-//                 <input type="date" />
-//                 <input type="number" placeholder="Guest Count" />
-//                 <select>
-//                     <option>Morning</option>
-//                     <option>Evening</option>
-//                     <option>Full day</option>
-//                 </select>
-//                 <button>Check Availability</button>
-//             </aside>
-//         </div>
-//     );
-// }
-
-// export default HallDetail;
-
-
 import React from "react";
 import Navbar from "../components/Navbar";
+import { Link } from "react-router-dom";
+
 
 function HallDetails() {
   return (
@@ -76,13 +39,13 @@ function HallDetails() {
           <h3 className="text-lg font-semibold mb-2">Pricing</h3>
           <p className="text-gray-700">₹1200 per plate · Minimum 200 guests</p>
         </div>
-        
+
         <Link to="/booking">
-        {/* Booking Button */}
-        <button className="w-full sm:w-auto bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition">
-          Book Now
-        </button>
+          <button className="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition">Book Now</button>
         </Link>
+
+
+        
 
         
       </div>

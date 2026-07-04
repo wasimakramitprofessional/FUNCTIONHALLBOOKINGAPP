@@ -6,6 +6,8 @@ import HallDetail from "./pages/HallDetail";
 import BookingCheckout from "./pages/BookingCheckout";
 import CustomerDashboard from "./pages/CustomerDashboard";
 import BookingForm from "./pages/BookingForm";
+import Register from "./pages/Register";
+import Login from "./pages/Login";
 
 function AppRoutes(){
     return(
@@ -16,6 +18,8 @@ function AppRoutes(){
             <Route path="/booking/:id" element={<BookingCheckout />} />
             <Route path="/dashboard" element={<CustomerDashboard />} />
             <Route path="/booking" element={<BookingForm />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/login" element={<Login />} />
         </Routes>
     );
 }
