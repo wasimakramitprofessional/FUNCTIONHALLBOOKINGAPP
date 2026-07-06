@@ -1,10 +1,10 @@
-// HallOwnerPage.js
 import React, { useState } from "react";
-import Sidebar1 from "../components/Sidebar1";
+import HallOwnerSidebar from "../components/HallOwnerSidebar";
 import OwnerDashboard from "../components/OwnerDashboard";
 import OwnerCalendar from "../components/OwnerCalendar";
 import OwnerListings from "../components/OwnerListings";
 import OwnerEarnings from "../components/OwnerEarnings";
+import OwnerOnboarding from "../components/OwnerOnboarding";
 
 export default function HallOwnerPage() {
   const [active, setActive] = useState("Dashboard");
@@ -15,14 +15,16 @@ export default function HallOwnerPage() {
       case "Calendar": return <OwnerCalendar />;
       case "My Listings": return <OwnerListings />;
       case "Earnings & Payouts": return <OwnerEarnings />;
+      case "Onboarding": return <OwnerOnboarding />;
       default: return <div>Select a tab</div>;
     }
   };
 
   return (
-    <div className="owner-page">
-      <Sidebar active={active} setActive={setActive} />
-      <div className="content">{renderContent()}</div>
+    <div className="flex flex-col md:flex-row min-h-screen font-sans">
+      {/* Sidebar collapses below md */}
+      <HallOwnerSidebar active={active} setActive={setActive} />
+      <main className="flex-1 p-6 bg-gray-50">{renderContent()}</main>
     </div>
   );
 }

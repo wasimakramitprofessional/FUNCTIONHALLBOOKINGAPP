@@ -9,7 +9,13 @@ import BookingForm from "./pages/BookingForm";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import HallOwnerPage from "./pages/HallOwnerPage";
+import OwnerCalendar from "./components/OwnerCalendar";
+import OwnerDashboard from "./components/OwnerDashboard";
+import OwnerEarnings from "./components/OwnerEarnings";
+import OwnerListings from "./components/OwnerListings";
 import OwnerOnboarding from "./components/OwnerOnboarding";
+
+
 
 function AppRoutes(){
     return(
@@ -22,8 +28,16 @@ function AppRoutes(){
             <Route path="/booking" element={<BookingForm />} />
             <Route path="/register" element={<Register />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/HallOwnerPage" element={<HallOwnerPage />} />
-            <route path="/OwnerOnboarding" element={<OwnerOnboarding />} />
+
+            
+            <Route path="/hall-owner" element={<HallOwnerPage />} />
+            <Route path="/OwnerCalendar" element={<OwnerCalendar />} />
+            <Route path="/OwnerDashboard" element={<OwnerDashboard />} />
+            <Route path="/OwnerEarnings" element={<OwnerEarnings />} />
+            <Route path="/OwnerListings" element={<OwnerListings />} />
+            <Route path="/owner-onboarding" element={<OwnerOnboarding />} />
+
+            
         </Routes>
     );
 }
