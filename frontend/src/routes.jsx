@@ -8,6 +8,8 @@ import CustomerDashboard from "./pages/CustomerDashboard";
 import BookingForm from "./pages/BookingForm";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
+import HallOwnerPage from "./pages/HallOwnerPage";
+import OwnerOnboarding from "./components/OwnerOnboarding";
 
 function AppRoutes(){
     return(
@@ -20,6 +22,8 @@ function AppRoutes(){
             <Route path="/booking" element={<BookingForm />} />
             <Route path="/register" element={<Register />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/HallOwnerPage" element={<HallOwnerPage />} />
+            <route path="/OwnerOnboarding" element={<OwnerOnboarding />} />
         </Routes>
     );
 }
