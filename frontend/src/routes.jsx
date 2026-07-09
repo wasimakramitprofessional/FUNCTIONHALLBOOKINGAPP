@@ -1,19 +1,19 @@
 import React from "react";
 import {Routes, Route} from "react-router-dom";
-import Landing from "./pages/Landing";
-import SearchResults from "./pages/SearchResults";
-import HallDetail from "./pages/HallDetail";
-import BookingCheckout from "./pages/BookingCheckout";
-import CustomerDashboard from "./pages/CustomerDashboard";
-import BookingForm from "./pages/BookingForm";
-import Register from "./pages/Register";
-import Login from "./pages/Login";
-import HallOwnerPage from "./pages/HallOwnerPage";
-import OwnerCalendar from "./components/OwnerCalendar";
-import OwnerDashboard from "./components/OwnerDashboard";
-import OwnerEarnings from "./components/OwnerEarnings";
-import OwnerListings from "./components/OwnerListings";
-import OwnerOnboarding from "./components/OwnerOnboarding";
+import Landing from "./pages/Customer/Landing";
+import SearchResults from "./pages/Customer/SearchResults";
+import HallDetail from "./pages/Customer/HallDetail";
+import BookingCheckout from "./pages/Customer/BookingCheckout";
+import CustomerDashboard from "./pages/Customer/CustomerDashboard";
+import BookingForm from "./pages/Customer/BookingForm";
+import Register from "./pages/Customer/Register";
+import Login from "./pages/Customer/Login";
+import HallOwnerPage from "./pages/HallOwner/HallOwnerPage";
+import OwnerCalendar from "./components/HallOwner/OwnerCalendar";
+import OwnerDashboard from "./components/HallOwner/OwnerDashboard";
+import OwnerEarnings from "./components/HallOwner/OwnerEarnings";
+import OwnerListings from "./components/HallOwner/OwnerListings";
+import OwnerOnboarding from "./components/HallOwner/OwnerOnboarding";
 
 
 

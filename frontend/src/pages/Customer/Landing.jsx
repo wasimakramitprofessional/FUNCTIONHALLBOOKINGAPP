@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import HeroBanner from "../components/HeroBanner";   // ✅ Your hero banner component
-import HallCard from "../components/HallCard";
+import Navbar from "../../components/Customer/Navbar";
+import HeroBanner from "../../components/Customer/HeroBanner";   // ✅ Your hero banner component
+import HallCard from "../../components/Customer/HallCard";
 
 function Landing() {
   return (

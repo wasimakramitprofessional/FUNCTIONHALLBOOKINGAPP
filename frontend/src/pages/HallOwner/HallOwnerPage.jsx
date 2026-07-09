@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import HallOwnerSidebar from "../components/HallOwnerSidebar";
-import OwnerDashboard from "../components/OwnerDashboard";
-import OwnerCalendar from "../components/OwnerCalendar";
-import OwnerListings from "../components/OwnerListings";
-import OwnerEarnings from "../components/OwnerEarnings";
-import OwnerOnboarding from "../components/OwnerOnboarding";
+import HallOwnerSidebar from "../../components/HallOwner/HallOwnerSidebar";
+import OwnerDashboard from "../../components/HallOwner/OwnerDashboard";
+import OwnerCalendar from "../../components/HallOwner/OwnerCalendar";
+import OwnerListings from "../../components/HallOwner/OwnerListings";
+import OwnerEarnings from "../../components/HallOwner/OwnerEarnings";
+import OwnerOnboarding from "../../components/HallOwner/OwnerOnboarding";
 
 export default function HallOwnerPage() {
   const [active, setActive] = useState("Dashboard");
